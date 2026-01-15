@@ -10,7 +10,7 @@ exports.createAccount = async (req, res) => {
   }
 };
 
-// GET all accounts
+// GET all account
 exports.getAccounts = async (req, res) => {
   const accounts = await Account.find();
   res.json(accounts);
@@ -26,7 +26,7 @@ exports.updateAccount = async (req, res) => {
   res.json(account);
 };
 
-// DELETE account
+// DELeTE account
 exports.deleteAccount = async (req, res) => {
   await Account.findByIdAndDelete(req.params.id);
   res.json({ message: "Account deleted" });
