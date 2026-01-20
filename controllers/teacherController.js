@@ -10,7 +10,7 @@ exports.getTeachers = async (req, res) => {
   res.json(await Teacher.find());
 };
 
-// UPDATE teacher
+// UPDATE teacher by changing infos
 exports.updateTeacher = async (req, res) => {
   res.json(
     await Teacher.findByIdAndUpdate(req.params.id, req.body, { new: true })
