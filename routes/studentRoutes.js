@@ -8,6 +8,7 @@ router.post("/", async (req, res) => {
   res.json(student);
 });
 
+
 // GET all students
 router.get("/", async (req, res) => {
   const students = await Student.find();
