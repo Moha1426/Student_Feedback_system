@@ -10,6 +10,8 @@ exports.getStudents = async (req, res) => {
   res.json(await Student.find());
 };
 
+
+
 // UPDATE student
 exports.updateStudent = async (req, res) => {
   res.json(
