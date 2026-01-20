@@ -7,8 +7,6 @@ router.post("/", async (req, res) => {
   const student = await Student.create(req.body);
   res.json(student);
 });
-
-
 // GET all students
 router.get("/", async (req, res) => {
   const students = await Student.find();
