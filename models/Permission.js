@@ -8,6 +8,7 @@ const permissionSchema = new mongoose.Schema(
       unique: true,
       trim: true, // PERM_FEEDBACK_CREATE
     },
+    
     name: {
       type: String,
       required: true, // Create Feedback
